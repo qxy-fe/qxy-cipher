@@ -1,0 +1,14 @@
+{
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "cSpell.words": [
+    "bumpp",
+    "esno",
+    "pnpm",
+    "pnpx",
+    "tsbuildinfo",
+    "vite",
+    "vitest"
+  ]
+}

@@ -1,3 +1,12 @@
+## [0.0.3](https://github.com/qxy-fe/qxy-cipher/compare/v0.0.2...v0.0.3) (2022-05-09)
+
+
+### Bug Fixes
+
+* external crypto-js ([972b0aa](https://github.com/qxy-fe/qxy-cipher/commit/972b0aac01dc1d067f7b46be03c6f616796634ab))
+
+
+
 ## [0.0.2](https://github.com/qxy-fe/qxy-cipher/compare/v0.0.1...v0.0.2) (2022-05-09)
 
 

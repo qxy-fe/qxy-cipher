@@ -1,3 +1,4 @@
+import CryptoJS from 'crypto-js'
 import { format } from './format'
 import { type CipherDecrypt } from './types'
 

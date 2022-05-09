@@ -47,7 +47,7 @@
     "build": "run-s clean build:lib",
     "build:lib": "unbuild",
     "dev": "unbuild --stub",
-    "lint": "eslint .",
+    "lint": "eslint --ext .js,.ts .",
     "prepublishOnly": "pnpm run build",
     "release": "run-s release:check release:version release:publish",
     "release:check": "run-s typecheck lint clean build",

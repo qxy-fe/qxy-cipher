@@ -9,15 +9,16 @@
 ## Install
 
 ```bash
-$ npm -i @qxy/cipher -S
+$ npm -i @qxy/cipher crypto-js -S
 # or
-$ yarn add @qxy/cipher
+$ yarn add @qxy/cipher crypto-js
 ```
 
 ## Usage
 
 ```ts
 import { createCipher } from '@qxy/cipher'
+import { getHash } from '@/services/utils'
 
 const password = `foobar`
 const { hash: key } = await getHash()

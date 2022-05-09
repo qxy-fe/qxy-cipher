@@ -4,6 +4,9 @@ export default defineBuildConfig({
   entries: [`src/index`],
   declaration: true,
   clean: true,
+  externals: [
+    `crypto-js`,
+  ],
   rollup: {
     emitCJS: true,
   },

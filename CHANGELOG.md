@@ -1,3 +1,12 @@
+## [0.0.4](https://github.com/qxy-fe/qxy-cipher/compare/v0.0.3...v0.0.4) (2022-05-12)
+
+
+### Bug Fixes
+
+* decrypt to origin ([0ce8e69](https://github.com/qxy-fe/qxy-cipher/commit/0ce8e691bb96d3886cbb8ba0687b5c9e9df5962e))
+
+
+
 ## [0.0.3](https://github.com/qxy-fe/qxy-cipher/compare/v0.0.2...v0.0.3) (2022-05-09)
 
 

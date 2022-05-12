@@ -4,7 +4,7 @@ import { type CipherEncrypt } from './types'
 
 export const createCipherEncrypt = (key: string): CipherEncrypt => data => {
   const message = JSON.stringify(data)
-
-  const encryptedMessage = CryptoJS.AES.encrypt(message, key, { format }).toString()
+  const cipherParams = CryptoJS.AES.encrypt(message, key, { format })
+  const encryptedMessage = cipherParams.toString()
   return encryptedMessage
 }

@@ -8,40 +8,29 @@ on:
   pull_request:
     branches:
       - main
-  workflow_dispatch:
 
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+      - uses: actions/setup-node@v3
+      - uses: pnpm/action-setup@v2
         with:
           run_install: true
 
-      - name: Set node
-        uses: actions/setup-node@v3
-
-      - name: Lint
-        run: pnpm run lint
+      - run: pnpm run lint
 
   typecheck:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+      - uses: actions/setup-node@v3
+      - uses: pnpm/action-setup@v2
         with:
           run_install: true
 
-      - name: Set node
-        uses: actions/setup-node@v3
-
-      - name: Typecheck
-        run: pnpm run typecheck
+      - run: pnpm run typecheck
 
   test:
     runs-on: ${{ matrix.os }}
@@ -54,40 +43,27 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+      - uses: pnpm/action-setup@v2
         with:
           run_install: true
 
-      - name: Set node version to ${{ matrix.node }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node }}
-
-      - name: Build
-        run: pnpm run build
-
-      - name: Test
-        run: pnpm run test
+      - run: pnpm run build
+      - run: pnpm run test
 
   coverage:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+      - uses: actions/setup-node@v3
+      - uses: pnpm/action-setup@v2
         with:
           run_install: true
 
-      - name: Set node
-        uses: actions/setup-node@v3
+      - run: pnpm run coverage
 
-      - name: Coverage
-        run: pnpm run coverage
-
-      - name: Coveralls
-        uses: coverallsapp/github-action@master
+      - uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}

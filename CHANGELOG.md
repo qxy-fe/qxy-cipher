@@ -1,3 +1,12 @@
+## [0.0.5](https://github.com/qxy-fe/qxy-cipher/compare/v0.0.4...v0.0.5) (2022-05-20)
+
+
+### Features
+
+* key validator ([785a28f](https://github.com/qxy-fe/qxy-cipher/commit/785a28fd74f9720976a304cbd1111eabb40a02b5))
+
+
+
 ## [0.0.4](https://github.com/qxy-fe/qxy-cipher/compare/v0.0.3...v0.0.4) (2022-05-12)
 
 

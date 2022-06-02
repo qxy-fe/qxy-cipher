@@ -1,3 +1,12 @@
+## [0.0.6](https://github.com/qxy-fe/qxy-cipher/compare/v0.0.5...v0.0.6) (2022-06-02)
+
+
+### Features
+
+* tsdoc ([63d37fd](https://github.com/qxy-fe/qxy-cipher/commit/63d37fd5741caeb333b3f84ebe2603401f9a7dd9))
+
+
+
 ## [0.0.5](https://github.com/qxy-fe/qxy-cipher/compare/v0.0.4...v0.0.5) (2022-05-20)
 
 

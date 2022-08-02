@@ -12,9 +12,13 @@ describe(`createCipher`, () => {
     const key = getRandomString()
     const cipher = createCipher({ key })
     expect(cipher.key).toBe(key)
-    expect(cipher).toHaveProperty(`key`)
-    expect(cipher).toHaveProperty(`encrypt`)
-    expect(cipher).toHaveProperty(`decrypt`)
+    expect(Object.keys(cipher)).toMatchInlineSnapshot(`
+      [
+        "key",
+        "encrypt",
+        "decrypt",
+      ]
+    `)
   })
 
   it(`should pass encrypt validator`, () => {
@@ -23,9 +27,13 @@ describe(`createCipher`, () => {
     const { encrypt } = createCipher({ key })
     const encryptedMessage = encrypt(originMessage)
     const cipherParams = JSON.parse(encryptedMessage)
-    expect(cipherParams).toHaveProperty(`ct`)
-    expect(cipherParams).toHaveProperty(`iv`)
-    expect(cipherParams).toHaveProperty(`s`)
+    expect(Object.keys(cipherParams)).toMatchInlineSnapshot(`
+      [
+        "ct",
+        "iv",
+        "s",
+      ]
+    `)
   })
 
   it(`should decrypt encryptedMessage to original`, () => {

@@ -1,7 +1,7 @@
 {
   "name": "@qxy/cipher",
   "version": "0.0.6",
-  "packageManager": "pnpm@7.1.7",
+  "packageManager": "pnpm@7.8.0",
   "description": "QXY cipher utils",
   "keywords": [
     "qxy",
@@ -54,7 +54,7 @@
     "release:check": "run-s typecheck lint clean build",
     "release:publish": "pnpm -r publish",
     "release:changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "release:version": "bumpp package.json --execute=\"pnpm release:changelog\" --commit \"build: release v%s\" --all --tag --push",
+    "release:version": "bumpp package.json --all --execute=\"pnpm release:changelog\"",
     "test": "vitest --passWithNoTests",
     "coverage": "vitest --coverage",
     "typecheck": "tsc --noEmit"
@@ -67,19 +67,19 @@
     "crypto-js": "^4.1.1"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config-typescript": "^1.0.2",
-    "@types/node": "^17.0.38",
-    "bumpp": "^7.1.1",
-    "c8": "^7.11.3",
+    "@ntnyq/eslint-config-typescript": "^1.0.3",
+    "@types/node": "^18.6.3",
+    "bumpp": "^8.2.1",
+    "c8": "^7.12.0",
     "conventional-changelog-cli": "^2.2.2",
-    "eslint": "^8.16.0",
+    "eslint": "^8.21.0",
     "npm-run-all": "^4.1.5",
-    "pnpm": "^7.1.7",
+    "pnpm": "^7.8.0",
     "rimraf": "^3.0.2",
-    "typescript": "^4.7.2",
-    "unbuild": "^0.7.4",
-    "vite": "^2.9.9",
-    "vitest": "^0.13.1"
+    "typescript": "^4.7.4",
+    "unbuild": "^0.7.6",
+    "vite": "^3.0.4",
+    "vitest": "^0.20.3"
   },
   "eslintConfig": {
     "extends": "@ntnyq/typescript",

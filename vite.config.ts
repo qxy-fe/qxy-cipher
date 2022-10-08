@@ -4,7 +4,11 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   test: {
     coverage: {
-      reporter: [`lcov`],
+      reporter: [
+        `lcov`,
+        `html-spa`,
+        `text`,
+      ],
     },
   },
 

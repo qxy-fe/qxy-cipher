@@ -1,5 +1,5 @@
 import { URL, fileURLToPath } from 'url'
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
   test: {
@@ -8,6 +8,7 @@ export default defineConfig({
         `lcov`,
         `html-spa`,
         `text`,
+        `json`,
       ],
     },
   },

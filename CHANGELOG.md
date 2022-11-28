@@ -1,3 +1,12 @@
+## [0.0.7](https://github.com/qxy-fe/qxy-cipher/compare/v0.0.6...v0.0.7) (2022-11-28)
+
+
+### Features
+
+* exports extra files ([32a067e](https://github.com/qxy-fe/qxy-cipher/commit/32a067e5996aa501ead4a2a3ee9924296f6da813))
+
+
+
 ## [0.0.6](https://github.com/qxy-fe/qxy-cipher/compare/v0.0.5...v0.0.6) (2022-06-02)
 
 

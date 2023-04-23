@@ -10,9 +10,15 @@
 ## Install
 
 ```bash
-$ npm -i @qxy/cipher crypto-js -S
-# or
-$ yarn add @qxy/cipher crypto-js
+npm -i @qxy/cipher crypto-js -S
+```
+
+```bash
+yarn add @qxy/cipher crypto-js
+```
+
+```bash
+pnpm add @qxy/cipher crypto-js
 ```
 
 ## Usage
@@ -21,7 +27,7 @@ $ yarn add @qxy/cipher crypto-js
 import { createCipher } from '@qxy/cipher'
 import { getHash } from '@/services/utils'
 
-const password = `foobar`
+const password = 'foobar'
 const { hash: key } = await getHash()
 const { encrypt, decrypt } = createCipher({ key })
 

@@ -1,12 +1,10 @@
 import { defineBuildConfig } from 'unbuild'
 
 export default defineBuildConfig({
-  entries: [`src/index`],
+  entries: ['src/index'],
   declaration: true,
   clean: true,
-  externals: [
-    `crypto-js`,
-  ],
+  externals: ['crypto-js'],
   rollup: {
     emitCJS: true,
   },

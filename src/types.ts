@@ -1,4 +1,3 @@
-
 /**
  * createCipher Options
  */

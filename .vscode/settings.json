@@ -9,6 +9,7 @@
     "pnpm",
     "pnpx",
     "tsbuildinfo",
+    "tsdoc",
     "vite",
     "vitest"
   ]

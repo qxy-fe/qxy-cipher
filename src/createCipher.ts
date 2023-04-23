@@ -10,8 +10,8 @@ import type { Cipher, CipherOptions } from './types'
 export const createCipher = (options: CipherOptions): Cipher => {
   const { key } = options
 
-  if (typeof key !== `string` || !key.length) {
-    throw new Error(`Key must be a non-empty string`)
+  if (typeof key !== 'string' || key.length === 0) {
+    throw new Error('Key must be a non-empty string')
   }
 
   const encrypt = createCipherEncrypt(key)

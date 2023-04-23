@@ -1,21 +1,16 @@
-import { URL, fileURLToPath } from 'url'
+import { URL, fileURLToPath } from 'node:url'
 import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
   test: {
     coverage: {
-      reporter: [
-        `lcov`,
-        `html-spa`,
-        `text`,
-        `json`,
-      ],
+      reporter: ['lcov', 'text', 'json'],
     },
   },
 
   resolve: {
     alias: {
-      '@qxy/cipher': fileURLToPath(new URL(`./src/index.ts`, import.meta.url)),
+      '@qxy/cipher': fileURLToPath(new URL('./src/index.ts', import.meta.url)),
     },
   },
 })

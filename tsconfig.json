@@ -2,16 +2,10 @@
   "compilerOptions": {
     "target": "ES2018",
     "module": "ESNext",
-    "lib": [
-      "ESNext"
-    ],
-    "types": [
-      "node"
-    ],
+    "lib": ["ESNext"],
+    "types": ["node"],
     "paths": {
-      "@qxy/cipher": [
-        "./src/index.ts"
-      ]
+      "@qxy/cipher": ["./src/index.ts"]
     },
     "moduleResolution": "node",
     "esModuleInterop": true,

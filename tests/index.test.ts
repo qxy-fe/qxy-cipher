@@ -3,12 +3,12 @@ import { createCipher } from '@qxy/cipher'
 
 const getRandomString = () => Math.random().toString(16).slice(5, 10)
 
-describe(`createCipher`, () => {
-  it(`should throw when key is an empty string`, () => {
-    expect(() => createCipher({ key: `` })).toThrow(`Key must be a non-empty string`)
+describe('createCipher', () => {
+  it('should throw when key is an empty string', () => {
+    expect(() => createCipher({ key: '' })).toThrow('Key must be a non-empty string')
   })
 
-  it(`should has exported properties after createCipher`, () => {
+  it('should has exported properties after createCipher', () => {
     const key = getRandomString()
     const cipher = createCipher({ key })
     expect(cipher.key).toBe(key)
@@ -21,7 +21,7 @@ describe(`createCipher`, () => {
     `)
   })
 
-  it(`should pass encrypt validator`, () => {
+  it('should pass encrypt validator', () => {
     const key = getRandomString()
     const originMessage = getRandomString()
     const { encrypt } = createCipher({ key })
@@ -36,7 +36,7 @@ describe(`createCipher`, () => {
     `)
   })
 
-  it(`should decrypt encryptedMessage to original`, () => {
+  it('should decrypt encryptedMessage to original', () => {
     const key = getRandomString()
     const originMessage = getRandomString()
     const { encrypt, decrypt } = createCipher({ key })

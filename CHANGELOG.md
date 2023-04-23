@@ -1,3 +1,12 @@
+## [0.0.8](https://github.com/qxy-fe/qxy-cipher/compare/v0.0.7...v0.0.8) (2023-04-23)
+
+
+### Bug Fixes
+
+* fix type defination export ([58eb9d9](https://github.com/qxy-fe/qxy-cipher/commit/58eb9d950b85565a64fe1476e13455b20de405d8))
+
+
+
 ## [0.0.7](https://github.com/qxy-fe/qxy-cipher/compare/v0.0.6...v0.0.7) (2022-11-28)
 
 

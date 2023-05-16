@@ -53,7 +53,7 @@
     "release:publish": "pnpm -r publish",
     "release:version": "bumpp package.json --all --x=\"pnpm release:changelog\"",
     "test": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "vitest typecheck"
   },
   "peerDependencies": {
     "crypto-js": "^4.1.1"

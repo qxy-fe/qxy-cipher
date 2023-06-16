@@ -1,7 +1,4 @@
 {
-  "[typescript]": {
-    "editor.formatOnSave": false
-  },
   "cSpell.words": [
     "bumpp",
     "esno",

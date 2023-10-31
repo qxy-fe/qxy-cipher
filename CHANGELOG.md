@@ -1,3 +1,12 @@
+## [0.1.1](https://github.com/qxy-fe/qxy-cipher/compare/v0.1.0...v0.1.1) (2023-10-31)
+
+
+### Features
+
+* bump crypto-js to 4.2.0 ([c00885c](https://github.com/qxy-fe/qxy-cipher/commit/c00885ca4df96e2ab505a908c402d62bc47be642))
+
+
+
 # [0.1.0](https://github.com/qxy-fe/qxy-cipher/compare/v0.0.8...v0.1.0) (2023-09-04)
 
 

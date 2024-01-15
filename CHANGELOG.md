@@ -1,3 +1,12 @@
+# [0.2.0](https://github.com/qxy-fe/qxy-cipher/compare/v0.1.1...v0.2.0) (2024-01-15)
+
+
+### Features
+
+* use esm ([a9b093b](https://github.com/qxy-fe/qxy-cipher/commit/a9b093b883fa8ed3091c7c1586b9a04a4ec93d22))
+
+
+
 ## [0.1.1](https://github.com/qxy-fe/qxy-cipher/compare/v0.1.0...v0.1.1) (2023-10-31)
 
 

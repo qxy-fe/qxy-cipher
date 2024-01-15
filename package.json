@@ -1,7 +1,7 @@
 {
   "name": "@qxy/cipher",
   "type": "module",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "packageManager": "pnpm@8.14.1",
   "description": "QXY cipher utils",
   "keywords": [
